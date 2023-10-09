@@ -11,7 +11,17 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      }
     },
     "bundle": {
       "active": true,
@@ -58,7 +68,11 @@
         "height": 720,
         "resizable": true,
         "title": "ByteBag",
-        "width": 1280
+        "width": 1280,
+        "decorations": false,
+        "center": true,
+        "minHeight": 360,
+        "minWidth": 640
       }
     ]
   }
