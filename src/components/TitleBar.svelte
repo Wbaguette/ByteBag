@@ -1,7 +1,11 @@
+<script lang="ts">
+   import { appWindow } from "@tauri-apps/api/window"
+</script>
+
 <style>
    .titlebar {
       height: 30px;
-      background-color: #333063;
+      background-color: rgb(13, 13, 13);
       user-select: none;
       display: flex;
       justify-content: flex-start;
@@ -22,13 +26,13 @@
       font-family: Arial, Helvetica, sans-serif;
 
       margin: 0.4%;      
-      background-color: #333063;
+      background-color: black;
       border: none;
-      color: #e9e7e7;
+      color: #bab8b8;
    }
 
    .titlebar button:hover {
-      background-color: #391389
+      background-color: rgb(46, 46, 46);
    }
 </style>
 
@@ -48,20 +52,16 @@
    </button>
 
    <button id="title-minimize" on:click={appWindow.minimize}>
-      <img src="https://api.iconify.design/mdi:window-minimize.svg?color=%23ffff" alt="minimize">
+      <img src="https://api.iconify.design/mdi:window-minimize.svg?color=%23bab8b8" alt="minimize">
    </button>
 
    <button id="title-maximize" on:click={async () => {
       if (await appWindow.isMaximized()) { appWindow.unmaximize() } else { appWindow.maximize() }
    }}>
-      <img src="https://api.iconify.design/mdi:window-maximize.svg?color=%23ffff" alt="maximize">
+      <img src="https://api.iconify.design/mdi:window-maximize.svg?color=%23bab8b8" alt="maximize">
    </button>
 
    <button id="title-close" on:click={appWindow.close}>
-      <img src="https://api.iconify.design/mdi:close.svg?color=%23ffff" alt="close">
+      <img src="https://api.iconify.design/mdi:close.svg?color=%23bab8b8" alt="close">
    </button>
 </div>
-
-<script lang="ts">
-   import { appWindow } from "@tauri-apps/api/window"
-</script>

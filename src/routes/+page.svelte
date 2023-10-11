@@ -9,22 +9,17 @@
    }
 </script>
 
+<div>
+   <TitleBar />
+   <body>
+      <label for="name">Name</label>
+      <input name="name" type="text" bind:value={name} on:change={greet}/>
+         {#if output}
+      <p>{output}</p>
+   {/if}
+   </body>
 
-<TitleBar />
-
-
-<body>
-   <label for="name">Name</label>
-   <input name="name" type="text" bind:value={name} on:change={greet}/>
-      {#if output}
-   <p>{output}</p>
-{/if}
-</body>
-
-
-
-
-
+</div>
 
 <style>
    

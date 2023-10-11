@@ -3,6 +3,7 @@ A WIP personal text editor
 
 ## Ideas to implement
 
+1. Multiple Windows 
 1. Multiple tabs
 2. File system/Project outline panel
 3. Keyboard Shortcuts
