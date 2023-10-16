@@ -1,6 +1,5 @@
 <script lang="ts">
    
-
 </script>
 
 <style>
@@ -10,7 +9,6 @@
       background-color: #001dfb;
    }
 </style>
-
 
 <div class="file-explorer">
 

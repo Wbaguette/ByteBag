@@ -12,22 +12,25 @@
 </script>
 
 <style>
-
-   main {
-      margin: 50px;
-      width: 100%;
-      height: 100%;
+   .container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      margin-left: -8px;
+      padding-left: 0px;
+      margin-right: -8px;
+      padding-right: 0px;
    }
+
 </style>
 
 <header>
    <TitleBar />
 </header>
 
-
-<main>
+<div class="container">
    <FileExplorer />
    <Editor />
-</main>
-
+</div>
+   
 
