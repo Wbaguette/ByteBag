@@ -4,8 +4,13 @@
 
 <style>
    .editor {
-      width: 80vw;
+      resize: horizontal;
+      flex: 3;
+      min-width: 0;
+      /* width: 80vw; */
       height: 100vh;
+      display: flex;
+      flex-direction: column;
       background-color: #fb0000;
    }
 </style>

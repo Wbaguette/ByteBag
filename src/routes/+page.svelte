@@ -12,6 +12,7 @@
 </script>
 
 <style>
+   
    .container {
       display: flex;
       flex-direction: row;
@@ -20,6 +21,7 @@
       padding-left: 0px;
       margin-right: -8px;
       padding-right: 0px;
+      height: 100vh;
    }
 
 </style>
