@@ -1,6 +1,8 @@
 <script lang="ts">
    import { invoke } from "@tauri-apps/api/tauri"
    import TitleBar from "../components/TitleBar.svelte";
+   import Editor from "../components/Editor.svelte";
+   import FileExplorer from "../components/FileExplorer.svelte";
 
    let name: string
    let output: string
@@ -9,19 +11,23 @@
    }
 </script>
 
-<div>
-   <TitleBar />
-   <body>
-      <label for="name">Name</label>
-      <input name="name" type="text" bind:value={name} on:change={greet}/>
-         {#if output}
-      <p>{output}</p>
-   {/if}
-   </body>
-
-</div>
-
 <style>
-   
 
+   main {
+      margin: 50px;
+      width: 100%;
+      height: 100%;
+   }
 </style>
+
+<header>
+   <TitleBar />
+</header>
+
+
+<main>
+   <FileExplorer />
+   <Editor />
+</main>
+
+
